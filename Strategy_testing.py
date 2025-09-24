@@ -32,6 +32,8 @@ print(sum(y)/len(y))
 
 """
 
+
+
 #Strategy 3
 """
 y = [game(100, strategy3)[0] for i in range(20)]
@@ -54,4 +56,22 @@ for i in range(10):
 
 #print(averages)
 
+
+"""
+
+
+
+
+#Strategy 4
+"""
+averages = []
+for i in range(100):
+    y = [game(100, strategy4)[0] for i in range(100)]
+    x = list(range(len(y))) 
+    averages.append(sum(y)/len(y))
+
+y = averages
+x = range(len(averages))
+plt.plot(x, y)
+plt.show()
 """
